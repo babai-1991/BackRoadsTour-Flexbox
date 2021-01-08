@@ -63,21 +63,17 @@ body {
 	line-height: 1.5;
 	font-size: 0.875rem;
 }
-ul {
-	list-style-type: none;
-}
 a {
 	text-decoration: none;
-}
-img {
-	width: 100%;
-	display: block;
 }
 /* img:not(.nav-logo) {
   width: 100%;
   display: block;
 } */
-
+img {
+	width: 100%;
+	display: block;
+}
 h1,
 h2,
 h3,
@@ -160,13 +156,11 @@ p {
 .section-title span {
 	color: var(--clr-primary-5);
 }
-
 .section-center {
 	width: 90vw;
 	margin: 0 auto;
-	min-width: 1170px;
+	max-width: 1170px;
 }
-
 @media screen and (min-width: 992px) {
 	.section-center {
 		width: 95vw;
@@ -177,6 +171,7 @@ p {
 Navbar
 ===============
 */
+
 /*
 =============== 
 Hero
@@ -185,12 +180,10 @@ Hero
 .hero {
 	min-height: 100vh;
 	background: var(--clr-primary-5);
-	/* placed hero banner in the center horizontally and vertically */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 .hero-banner {
 	text-align: center;
 	color: var(--clr-white);
@@ -199,18 +192,15 @@ Hero
 .hero-banner h1 {
 	text-transform: uppercase;
 }
-/* on a bigger screen size I wouldn't want this text to be spanning all across */
 .hero-banner p {
 	max-width: 35rem;
-	/*center , margin:0 auto; */
 	margin-left: auto;
 	margin-right: auto;
 	color: var(--clr-white);
 	letter-spacing: var(--spacing);
 }
-/* make .hero-btn a bit bigger*/
 .hero-btn {
-	padding: .9rem 1.6rem;
+	padding: 0.9rem 1.6rem;
 	font-size: 1.25rem;
 	background: var(--clr-white);
 	color: var(--clr-primary-5);
@@ -220,13 +210,10 @@ Hero
 	color: var(--clr-white);
 	border-color: var(--clr-white);
 }
-
 @media screen and (min-width: 768px) {
 	.hero {
-		background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)), url('../images/main.jpeg');
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
+		background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+			url("../images/main.jpeg") center/cover no-repeat;
 	}
 	.hero-banner {
 		padding: 0;
@@ -255,13 +242,11 @@ Services
 Featured Tours
 ===============
 */
-
 /*
 =============== 
-Contact
+Deals
 ===============
 */
-
 /*
 =============== 
 Gallery
