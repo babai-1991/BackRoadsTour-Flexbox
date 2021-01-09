@@ -383,7 +383,7 @@ featured Tours
 	align-items: center;
 }
 
-.tour-footer {
+.tour-footer p {
 	line-height: 0;
 	margin-bottom: 0;
 	text-transform: capitalize;
