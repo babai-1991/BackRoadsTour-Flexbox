@@ -225,6 +225,17 @@ Navbar
 	background: var(--clr-primary-8);
 	transform: translateX(10px);
 }
+/* toggle */
+.nav-links {
+	height: 0;
+	overflow: hidden;
+	transition: var(--transition);
+}
+/* 280px */
+.show-links {
+	height: 280px;
+}
+
 /*
 =============== 
 Hero
